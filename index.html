@@ -4,7 +4,7 @@
 	</head>
 
 	<script>
-		$.getJSON("/qstns.json").done(function(data){
+		$.getJSON("content/qstns.json").done(function(data){
 		allquestions = data;
 		var entry = allquestions[Math.floor(Math.random()*data.length)];
 		document.write(entry['question'])
