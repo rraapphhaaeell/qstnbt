@@ -1,0 +1,13 @@
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+	</head>
+
+	<script>
+		$.getJSON("/content/qstns.json").done(function(data){
+		allquestions = data;
+		var entry = allquestions[Math.floor(Math.random()*data.length)];
+		document.write(entry['question'])
+		});
+	</script>
+</html>
